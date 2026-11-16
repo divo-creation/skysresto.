@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skys Resto, restaurant à Konankro : plats africains et gastronomie ivoirienne.">
+  <title>Skys Resto  - Restaurant à Konankro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#accueil" class="logo">Skys Resto</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#menu">Menu</a>
+      <a href="#apropos">À propos</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div>
+        <h1>Skys Resto </h1>
+        <p class="slogan">Plats africains et gastronomie ivoirienne</p>
+        <p>📍 Konankro</p>
+        <a class="btn" id="btn-commander" href="#" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <h2>Notre menu</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/attieke-poisson.jpg" alt="Attiéké poisson " loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🐟 Attiéké poisson</h3>
+            <p>Poisson grillé au charbon, attiéké, oignons et piment frais.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/poulet-braise.jpg" alt="Poulet braisé" loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🍗 Poulet braisé</h3>
+            <p>Poulet mariné et grillé, servi avec alloco ou attiéké.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/kedjenou.jpg" alt="Kedjenou de poulet" loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🍲 Kedjenou de poulet</h3>
+            <p>Poulet mijoté à l'étouffée avec légumes et épices.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/foutou.jpg" alt="Foutou sauce graine" loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🥘 Foutou sauce graine</h3>
+            <p>Foutou banane ou igname avec une sauce graine onctueuse.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/riz-gras.jpg" alt="Riz gras" loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🍛 Riz gras</h3>
+            <p>Riz cuit dans une sauce tomate parfumée, avec viande ou poisson.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/alloco.jpg" alt="Alloco" loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🍌 Alloco</h3>
+            <p>Bananes plantain frites, dorées et croustillantes.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/boissons.jpg" alt="Boissons" loading="lazy" onerror="this.style.display='none'">
+          <div class="card-body">
+            <h3>🥤 Boissons</h3>
+            <p>Bissap, jus de gingembre, jus de baobab et boissons fraîches.</p>
+          </div>
+        </article>
+      </div>
+      <p class="note">Le menu peut varier selon les arrivages. Contactez-nous pour connaître les plats du jour.</p>
+    </section>
+
+    <section class="section alt" id="apropos">
+      <h2>À propos</h2>
+      <p>
+        Skys Resto vous accueille à Konankro pour vous faire découvrir
+        la richesse de la cuisine africaine et de la gastronomie ivoirienne.
+        Des plats préparés avec soin, dans la convivialité et la tradition.
+      </p>
+    </section>
+
+    <section class="section" id="horaires">
+      <h2>Horaires d'ouverture</h2>
+      <ul class="horaires">
+        <li><span>Lundi</span><span>08h00 - 22h00</span></li>
+        <li><span>Mardi</span><span>08h00 - 22h00</span></li>
+        <li><span>Mercredi</span><span>08h00 - 22h00</span></li>
+        <li><span>Jeudi</span><span>08h00 - 22h00</span></li>
+        <li><span>Vendredi</span><span>08h00 - 22h00</span></li>
+        <li><span>Samedi</span><span>08h00 - 23h00</span></li>
+        <li><span>Dimanche</span><span>10h00 - 22h00</span></li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>📍 Konankro</p>
+      <p>📞 <a class="lien" href="tel:+2250564677033">05 64 67 70 33</a></p>
+      <a class="btn" id="btn-contact" href="#" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+
+      <form class="form" id="form-commande">
+        <h3>Commander rapidement</h3>
+        <input type="text" id="nom" placeholder="Votre nom" required>
+        <select id="plat" required>
+          <option value="">Choisir un plat</option>
+          <option>Attiéké poisson braisé</option>
+          <option>Poulet braisé</option>
+          <option>Kedjenou de poulet</option>
+          <option>Foutou sauce graine</option>
+          <option>Riz gras</option>
+          <option>Alloco</option>
+        </select>
+        <textarea id="message" rows="3" placeholder="Précisions (quantité, adresse...)"></textarea>
+        <button type="submit" class="btn">Envoyer la commande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="annee"></span> Skys Resto- Konankro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
